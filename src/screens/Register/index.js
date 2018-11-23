@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TextField from '@material-ui/core/TextField';
 import fireBase from '../../config/fileBase';
+import Login from '../Login'
 import './style.scss';
 import Routes from '../../router';
 export default class Register extends Component {
@@ -68,6 +69,7 @@ export default class Register extends Component {
                 <TextField label="Mobile Number"  onChange={this.changeMobileNumber}  fullWidth></TextField>
                 <TextField type="Password" label="Password"  onChange={this.changePassword} fullWidth></TextField>
                 <button color="primary" className="primary" onClick={this.register}   >Submit</button>
+                <button>Login</button>
             </form>
             </div>
         )
